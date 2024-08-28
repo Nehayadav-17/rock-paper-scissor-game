@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Game</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- display area -->
+      <div class="top-section">
+        <div class="game-name">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSORS</p>
+        </div>
+
+        <!-- display score  -->
+        <div class="display-score">
+          <div class="compscore">
+            <p>COMPUTER SCORE</p>
+            <h1 id="pcscore">0</h1>
+          </div>
+          <div class="UserScore">
+            <p>YOUR SCORE</p>
+            <h1 id="userscore">0</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- game icon to choose -->
+      <div class="play-game-section">
+        <div class="pickInfo">
+          <h3 class="userPick">YOU PICKED</h3>
+          <h3 class="pcPick">PC PICKED</h3>
+        </div>
+        <div class="triangle line1"></div>
+        <div class="triangle line2"></div>
+        <div class="triangle line3"></div>
+
+        <div class="rock-img gameIcon">
+          <img src="Group rock1.png" alt="rock"/>
+        </div>
+        <div class="scissor-img gameIcon">
+          <img src="Group scissor.png" alt="scissor"/>
+        </div>
+        <div class="paper-img gameIcon">
+          <img src="Group paper.png" alt="paper"/>
+        </div>
+<!-- for pc -->
+        <div class="rock-img computer">
+          <img src="Group rock1.png" alt="rock"/>
+        </div>
+        <div class="scissor-img computer">
+          <img src="Group scissor.png" alt="scissor"/>
+        </div>
+        <div class="paper-img computer">
+          <img src="Group paper.png" alt="paper"/>
+        </div>
+
+      </div>
+
+      <!-- rule button -->
+      <button id="ruleBtn">RULES</button>
+
+      <!-- rule button describtion -->
+      <div class="ruleBox">
+        <h1>Game Rules</h1>
+        <div class="closeBtn">
+       <img src="close.png" alt="" class="closeBtn">
+      </div>
+        <!-- <div class="rules"> -->
+          <div class="list-of-rules">
+            <div class="square"></div>
+            <div class="list-item">
+              Rock beats scissors, scissors beat paper, and paper beats rock.
+            </div>
+          </div>
+
+          <div class="list-of-rules">
+            <div class="square"></div>
+            <div class="list-item">
+              Agree ahead of time whether you’ll count off “rock, paper,
+              scissors, shoot” or just “rock, paper, scissors.”
+            </div>
+          </div>
+
+          <div class="list-of-rules">
+            <div class="square"></div>
+            <div class="list-item">
+              Use rock, paper, scissors to settle minor decisions or simply play
+              to pass the time
+            </div>
+          </div>
+
+          <div class="list-of-rules">
+            <div class="square"></div>
+            <div class="list-item">
+              If both players lay down the same hand, each player lays down
+              another hand
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+
+      <!-- result  -->
+      <div class="reultContainer">
+        <h1 class="win">YOU WIN</h1>
+        <h2 class="againstPc">AGAINST PC</h2>
+        <button class="playAgain">PLAY AGAIN</button>
+      </div>
+
+  <!-- next-btn -->
+      <a href="winner.html">
+        <button class="nextBtn">NEXT</button>
+      </a>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

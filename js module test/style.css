@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #8CC461;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5%;
+    position: relative;
+
+}
+
+
+.top-section{
+    width: 50%;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    margin:auto;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-name{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 3px;
+}
+
+.display-score{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 6%;
+
+}
+
+.compscore{
+    width: 25%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 1.8% 2%;
+    text-align: center;
+    line-height: 18px;
+    letter-spacing:1px;
+}
+
+.compscore p{
+    font-size: 0.9rem;
+    font-weight:600 ;
+}
+
+.compscore h1{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 19%;
+    
+}
+
+.UserScore{
+    width: 25%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 1.8% 2%;
+    text-align: center;
+    line-height: 18px;
+    letter-spacing:1px;
+}
+
+.UserScore p{
+    font-size: 0.9rem;
+    font-weight:600 ;
+}
+
+.UserScore h1{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 19%;
+    
+}
+
+/* game icon to choose */
+
+.triangle{
+    width: 21vw;
+    height: 3vh;
+    background-color: black;
+    margin-top: 8%;
+    opacity: 60%;
+}
+.line1{
+    position: absolute;
+    top: 12%;
+    left: 25%;
+
+}
+.line2{
+    position: absolute;
+    top: 45%;
+    right: 4%;
+    transform: rotate(120deg);
+}
+.line3{
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    transform: rotate(55deg);
+}
+/* game play */
+.play-game-section{
+    width: 38vw;
+    height: 61vh;
+    /* background-color: rgb(177, 106, 12); */
+    margin: 3% auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.pickInfo{
+    display: none;
+}
+.pickInfo h3{
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 18%;
+}
+.pickInfo .userPick{
+    position: absolute;
+    top: 2%;
+    left: 12%;
+}
+.pickInfo .pcPick{
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 2%;
+    right: 12%
+}
+
+
+.gameIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.gameIcon img{
+    width: 130px;
+    height: 130px;
+}
+/* for computer */
+.computer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    cursor: pointer;
+    display: none; 
+}
+.computer img{
+    width: 130px;
+    height: 130px;
+}
+
+.rock-img{
+    position: absolute;
+    top: 8%;
+    left: 18%;
+  
+}
+.scissor-img{
+    position: absolute;
+    top: 8%;
+    right:8%;
+}
+.paper-img{
+    position: absolute;
+    top: 64%;
+    left: 43.5%;    
+}
+
+/* rule button */
+#ruleBtn{
+    width: 8%;
+    color: #FFFFFF;
+    border: none;
+   border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0.5% 1%;
+    position: absolute;
+    right: 2%;
+    bottom: 1%;
+    background-color: #8CC461;
+    cursor: pointer;
+}
+
+/* game rule description */
+.ruleBox{
+    background-color: #004429;
+    width: 22%;
+    height: 50%;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 3%;
+    top: 38%;
+    border: 8px solid #FFFFFF;
+    border-radius: 12px;
+    padding-top: 1.5%;
+    color: #FFFFFF;
+}
+.ruleBox h1{
+    text-align: center;
+    font-weight: 500;
+}
+
+.closeBtn{
+    border-radius: 50%;
+    width: 50px;
+    height: 52px;
+    position: absolute;
+    right: -5%;
+    top: -8%;
+    cursor: pointer;
+}
+.list-of-rules{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 6%;
+    gap: 4%;
+    font-size: 0.9rem;
+    font-weight: 400;
+   
+
+}
+.square{
+    background-color: #FFD600;
+    width: 18px;
+    height: 10px;
+}
+.list-item{
+    line-height: 18px;
+}
+
+/* result */
+.reultContainer{
+    width: 11vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 52%;
+    left: 44.2%;
+    display: none;
+}
+
+.win{
+    color: #FFFFFF;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.againstPc{
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    /* margin-top: 18%; */
+}
+.playAgain{
+    color: #6B6B6B;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 5% 12%;
+    margin-top: 6% ;
+    cursor: pointer;
+}
+
+/* next-btn */
+.nextBtn{
+    width: 8%;
+    color: #FFFFFF;
+    border: none;
+   border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0.5% 1.2%;
+    position: absolute;
+    right: 2%;
+    bottom: 1%;
+    background-color: #8CC461;
+    cursor: pointer;
+    display: none;
+}
+
+/* winner page */
+.win-conatiner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6%;
+}
+
+.win-conatiner img{
+    width: 14vw;
+}
+.win-conatiner h1{
+   font-size: 5.5rem;
+   font-weight: 600;
+   letter-spacing: 8px;
+   margin-top: 1.6%;
+   color: #FFFFFF;
+}
+.win-conatiner h2{
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+}
+.win-conatiner a{
+    width: 8.6vw;
+    padding: 2px 1px;
+    text-align: center;
+    margin-top: 3.8%;
+    color: #6B6B6B;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.star1{
+    position: absolute;
+    top: 18%;
+    left: 60%;
+    width: 6.6vw;
+}
+.star2{
+    position: absolute;
+    top: 14%;
+    left: 55%;
+    width: 4vw;
+}
+.star3{
+    position: absolute;
+    top: 38%;
+    left: 37%;
+    width: 6vw;
+}
+.star4{
+    position: absolute;
+    top: 38%;
+    left: 57%;
+    width: 6vw;
+}
+.star5{
+    position: absolute;
+    top: 28%;
+    left: 57%;
+}
+.star6{
+    position: absolute;
+    top: 25%;
+    left: 36%;
+    width: 5vw;
+}
+.star7{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 3vw;
+}
+.star8{
+    position: absolute;
+    top: 18%;
+    left: 46%;
+    width: 2vw;
+}
+.star{
+  animation: starAnimation 2s ease-out  alternate-reverse;  
+}
+
+
+@keyframes starAnimation{
+    0%{
+      transform: rotate(100deg);
+      transform: translateX(0);
+    }
+    20%{
+        transform: rotate(200deg);
+        transform: translateY(-10px);
+        opacity: 0.8;
+    }
+    50%{
+        transform: rotate(300deg);
+        transform: translateY(-60px);
+    }
+    80%{
+        transform: rotate(260deg);
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+}
+
+/*  by js*/
+.showIcon{
+    top: 8%;
+    left: 10%;
+}
+.right{
+    top: 9%;
+    left:68%;
+}
+.rulebutton{
+    width: 8%;
+    color: #FFFFFF;
+    border: none;
+   border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0.5% 1%;
+    position: absolute;
+    left: 81%;
+    bottom: 1%;
+    background-color: #8CC461;
+    cursor: pointer;
+}
+.green{
+    width: 146px;
+    height: 146px;
+    border: 8px solid #2E9A2563;
+    background-color: #2E9A2563;
+    border-radius: 50%;
+    box-shadow: 0px 1px 52px 0px #2E9A2563;
+    
+}
+.compwin{
+    width: 146px;
+    height: 146px;
+    border: 8px solid #2E9A2563;
+    background-color: #2E9A2563;
+    border-radius: 50%;
+    box-shadow: 0px 1px 52px 0px #2E9A2563;
+}
+
+
+
+
+
+
+
+
+
